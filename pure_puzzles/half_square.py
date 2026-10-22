@@ -1,5 +1,6 @@
 
-# Write a program that uses only two output statements, print("#") and print("\n"), to produce a pattern of hash symbols shaped like half of a perfect 5 × 5 square (or a right triangle):#####
+# Write a program that uses only two output statements, print("#") and print("\n"), to produce a pattern of hash symbols shaped like half of a perfect 5 × 5 square (or a right triangle):
+# #####
 # ####
 # ###
 # ##
