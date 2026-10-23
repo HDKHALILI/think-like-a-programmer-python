@@ -1,5 +1,5 @@
 
-# “Write a program that uses only two output statements, print("#") and print("\n"), to produce a pattern of hash symbols shaped like a sideways triangle:”
+# Write a program that uses only two output statements, print("#") and print("\n"), to produce a pattern of hash symbols shaped like a sideways triangle:
 #   #
 #   ##
 #   ###
