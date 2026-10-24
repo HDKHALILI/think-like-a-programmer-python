@@ -30,9 +30,10 @@ while number_string != "\n":
       even_length_checksum += double_digit_value(digit)
 
     position += 1
-    
+
   number_string = next(cin)
 
+# subtract 1 from position because the last char is EOL
 if (position - 1) % 2 == 0:
   checksum = even_length_checksum
 else:
