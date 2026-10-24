@@ -19,17 +19,19 @@ cin = iter(user_input)
 number_string = next(cin)
 
 while number_string != "\n":
-  digit = int(number_string)
+  if number_string.isdigit():
+    digit = int(number_string)
 
-  if position % 2 == 0:
-    odd_length_checksum += double_digit_value(digit)
-    even_length_checksum += digit
-  else:
-    odd_length_checksum += digit
-    even_length_checksum += double_digit_value(digit)
+    if position % 2 == 0:
+      odd_length_checksum += double_digit_value(digit)
+      even_length_checksum += digit
+    else:
+      odd_length_checksum += digit
+      even_length_checksum += double_digit_value(digit)
 
+    position += 1
+    
   number_string = next(cin)
-  position += 1
 
 if (position - 1) % 2 == 0:
   checksum = even_length_checksum
