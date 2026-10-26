@@ -10,7 +10,6 @@ def double_digit_value(digit):
 
   return sum
 
-
 checksum = 0
 odd_length_checksum = 0
 even_length_checksum = 0
