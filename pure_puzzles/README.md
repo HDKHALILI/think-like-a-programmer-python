@@ -37,3 +37,5 @@ Write a program that takes an identification number of arbitrary length and dete
 For an added challenge we will double every other digit, starting from the right most digit of the original number.
 
 [`checksum_iter.py`](checksum_iter.py) I have used `iter()` to emulate the C++'s `cin.get()`. This solution do maintain the flow of the C++ version of the program but doesn't really honour the constraint of processing each character before reading the next one. I have added character validation to ignore non digit characters.
+
+[`checksum.py`](checksum.py) I have updated the [`checksum_iter.py`](checksum_iter.py) to use `sys.stdin.read(1)` to make sure the program satisfies the constraint of processing each character before reading the next one.
