@@ -23,4 +23,4 @@ for row in range(1, 8):
   num_hash = 4 - abs(4 - row)
   for _ in range(num_hash):
     print("#", end="")
-  print("\n")
+  print("\n", end="")
