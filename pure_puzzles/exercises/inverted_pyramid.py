@@ -6,7 +6,9 @@
 
 
 # We start with 8 hashes
-# at each iteration we decrease it by 2
+# at each iteration we replace hashes from each sides with spaces
+#   first iteration one hashes from each side is replaced by a space
+#   iteration two replaces two hashes from each side with the same number of spaces
 # we repeat this 4 times
 
 for row in range(5):
