@@ -9,4 +9,4 @@
 for row in range(1, 6):
   for _ in range(6 - row):
     print("#", end="")
-  print("\n")
+  print("\n", end="")
