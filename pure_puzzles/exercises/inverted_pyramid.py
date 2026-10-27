@@ -5,3 +5,18 @@
 #      ##
 
 
+# We start with 8 hashes
+# at each iteration we decrease it by 2
+# we repeat this 4 times
+
+for row in range(5):
+  # shift the shapes the same number of spaces as row
+  for _ in range(row):
+    print(" ", end="")
+
+  for _ in range(8 - row * 2):
+    print("#", end="")
+  print("\n", end="")
+
+
+
