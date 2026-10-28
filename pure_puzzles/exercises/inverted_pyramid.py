@@ -1,3 +1,4 @@
+# Exercise 1
 # Using the same rule as the shapes programs from earlier in the chapter (only two output statements—one that outputs the hash mark and one that outputs an end-of-line), write a program that produces the following shape:
 #   ########
 #    ######
@@ -12,11 +13,12 @@
 # we repeat this 4 times
 
 for row in range(5):
-  # shift the shapes the same number of spaces as row
-  for _ in range(row):
+  num_spaces = row * 2
+  # shift the hashes half number of num_spaces
+  for space in range(num_spaces // 2):
     print(" ", end="")
 
-  for _ in range(8 - row * 2):
+  for hash_num in range(8 - num_spaces):
     print("#", end="")
   print("\n", end="")
 
