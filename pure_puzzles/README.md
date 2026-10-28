@@ -39,3 +39,16 @@ For an added challenge we will double every other digit, starting from the right
 [`checksum_iter.py`](checksum_iter.py) I have used `iter()` to emulate the C++'s `cin.get()`. This solution do maintain the flow of the C++ version of the program but doesn't really honour the constraint of processing each character before reading the next one. I have added character validation to ignore non digit characters.
 
 [`checksum.py`](checksum.py) I have updated the [`checksum_iter.py`](checksum_iter.py) to use `sys.stdin.read(1)` to make sure the program satisfies the constraint of processing each character before reading the next one.
+
+### Exercises
+
+#### 1\. Using the same rule as the shapes programs from earlier in the chapter (only two output statements—one that outputs the hash mark and one that outputs an end-of-line), write a program that produces the following shape:
+
+[`exercises/inverted_pyramid.py`](exercises/inverted_pyramid.py)
+
+```
+########
+ ######
+  ####
+   ##
+```
