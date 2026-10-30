@@ -11,10 +11,13 @@
  ##        ##
 #            #
 
-for row in range(4):
+
+HALF = 4
+WIDTH = 4 * HALF - 2 # minus 2 make sure that the last line has no space in the middle
+for row in range(HALF):
   num_hash = row + 1
   shift_spaces = row
-  mid_spaces = 14 - (num_hash * 2 + (shift_spaces * 2))
+  mid_spaces = WIDTH - (2 * num_hash + 2 * shift_spaces)
 
   for _ in range(shift_spaces):
     print(" ", end="")
@@ -29,10 +32,10 @@ for row in range(4):
     print("#", end="")
   print()
 
-for row in range(4):
-  num_hash = 4 - row
+for row in range(HALF):
+  num_hash = HALF - row
   shift_spaces = num_hash - 1
-  mid_spaces = 14 - (num_hash * 2 + (shift_spaces * 2))
+  mid_spaces = WIDTH - (2 * num_hash + 2 * shift_spaces)
 
   for _ in range(shift_spaces):
     print(" ", end="")
