@@ -69,3 +69,18 @@ For an added challenge we will double every other digit, starting from the right
   ####
    ##
 ```
+
+##### 3\. Using the same rule as the shapes programs from earlier in the chapter (only two output statements—one that outputs the hash mark and one that outputs an end-of-line), write a program that produces the following shape:
+
+[`exercises/x_shape.py`](exercises/x_shape.py)
+
+```
+#            #
+ ##        ##
+  ###    ###
+   ########
+   ########
+  ###    ###
+ ##        ##
+#            #
+```
