@@ -12,6 +12,7 @@
 #            #
 
 
+# you can modify value of HALF to get a bigger size of the above shape
 HALF = 4
 WIDTH = 4 * HALF - 2 # minus 2 make sure that the last line has no space in the middle
 for row in range(HALF):
