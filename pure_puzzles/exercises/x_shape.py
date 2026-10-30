@@ -33,8 +33,9 @@ for row in range(HALF):
   print()
 
 for row in range(HALF):
-  num_hash = HALF - row
-  shift_spaces = num_hash - 1
+  top_half_row = HALF - 1 - row  # 3, 2, 1, 0
+  num_hash = top_half_row + 1
+  shift_spaces = top_half_row
   mid_spaces = WIDTH - (2 * num_hash + 2 * shift_spaces)
 
   for _ in range(shift_spaces):
