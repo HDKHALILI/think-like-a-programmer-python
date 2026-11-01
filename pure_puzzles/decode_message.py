@@ -1,12 +1,15 @@
 import sys
 
+punctuations_dict = {
+        1: "!", 2: "?", 3: ",", 4: ".",
+        5: " ",6: ";", 7: '"', 8: "'"
+      }
 mode = "UPPERCASE"
 output_character = ""
 
 print("Enter comma separated series of numbers: ", end="", flush=True)
 char_str = sys.stdin.read(1)
 print("Decoded message: ", end="", flush=True)
-
 
 while char_str not in ("\n", "\r"):
   number = int(char_str)
@@ -35,10 +38,6 @@ while char_str not in ("\n", "\r"):
       mode = "UPPERCASE"
       skip_print = True
     else:
-      punctuations_dict = {
-        1: "!", 2: "?", 3: ",", 4: ".",
-        5: " ",6: ";", 7: '"', 8: "'"
-      }
       output_character = punctuations_dict.get(number, '')
 
   if not skip_print:
