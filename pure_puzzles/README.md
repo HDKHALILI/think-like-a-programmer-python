@@ -54,6 +54,8 @@ In punctuation mode, the integer is instead considered modulo 9. So 19 would yie
 
 At the beginning of each message, the decoding mode is uppercase letters. Each time the modulo operation (by 27 or 9, depending on mode) results in 0, the decoding mode switches. If the current mode is uppercase, the mode switches to lowercase letters. If the current mode is lowercase, the mode switches to punctuation, and if it is punctuation, it switches back to uppercase.
 
+[`decode_message.py`](decode_message.py)
+
 ### Exercises
 
 ##### 1\. Using the same rule as the shapes programs from earlier in the chapter (only two output statements—one that outputs the hash mark and one that outputs an end-of-line), write a program that produces the following shape:
