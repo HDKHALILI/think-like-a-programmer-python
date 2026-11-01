@@ -30,13 +30,14 @@ while char_str not in ("\n", "\r"):
       mode = "PUNCTUATION"
       skip_print = True
   elif mode == "PUNCTUATION":
+    number = number % 9
     if number == 0:
       mode = "UPPERCASE"
       skip_print = True
     else:
       punctuations_dict = {
         1: "!", 2: "?", 3: ",", 4: ".",
-        5: " ",6: ";", 7: '"', 9: "'"
+        5: " ",6: ";", 7: '"', 8: "'"
       }
       output_character = punctuations_dict.get(number, '')
 
