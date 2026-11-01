@@ -2,7 +2,11 @@ import sys
 
 mode = "UPPERCASE"
 output_character = ""
+
+print("Enter comma separated series of numbers: ", end="", flush=True)
 char_str = sys.stdin.read(1)
+print("Decoded message: ", end="", flush=True)
+
 
 while char_str not in ("\n", "\r"):
   number = int(char_str)
@@ -37,7 +41,7 @@ while char_str not in ("\n", "\r"):
       output_character = punctuations_dict.get(number, '')
 
   if not skip_print:
-    print(output_character, end="", flush=False)
+    print(output_character, end="", flush=True)
 
   if char_str not in ("\n", "\r"):
     char_str = sys.stdin.read(1)
