@@ -54,7 +54,7 @@ In punctuation mode, the integer is instead considered modulo 9. So 19 would yie
 
 At the beginning of each message, the decoding mode is uppercase letters. Each time the modulo operation (by 27 or 9, depending on mode) results in 0, the decoding mode switches. If the current mode is uppercase, the mode switches to lowercase letters. If the current mode is lowercase, the mode switches to punctuation, and if it is punctuation, it switches back to uppercase.
 
-[`decode_message.py`](decode_message.py)
+[`decode_message.py`](decode_message.py) As a bonus I have added input validation, it will discard none digit characters. The correct input is always a series of comma separated numbers.
 
 ### Exercises
 
