@@ -98,3 +98,7 @@ At the beginning of each message, the decoding mode is uppercase letters. Each t
  ##        ##
 #            #
 ```
+
+##### 4\. A simple decimal to binary converter.
+
+[`exercises/decimal_to_binary.py`](exercises/decimal_to_binary.py)
