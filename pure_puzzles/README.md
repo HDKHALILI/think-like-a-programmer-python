@@ -101,4 +101,4 @@ At the beginning of each message, the decoding mode is uppercase letters. Each t
 
 ##### 4\. A simple decimal to binary converter.
 
-[`exercises/decimal_to_binary.py`](exercises/decimal_to_binary.py)
+[`exercises/decimal_to_binary.py`](exercises/decimal_to_binary.py) We can just use the regular `input` statement to capture user's input, however, I have followed the them of the chapter where we capture each character one at a time. From here we can extend the program to process a series of numbers.
