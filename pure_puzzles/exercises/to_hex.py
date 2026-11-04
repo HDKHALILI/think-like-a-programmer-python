@@ -2,7 +2,7 @@ import sys
 
 print("Enter a decimal number to convert to hexadecimal: ", end="", flush=True)
 
-hex = ''
+hexadecimal = ''
 char_str = sys.stdin.read(1)
 number =  0
 
@@ -15,10 +15,10 @@ while number > 0:
   remainder = number % 16
 
   if remainder >= 10:
-    hex = chr((remainder % 10) + ord("A")) + hex
+    hexadecimal = chr((remainder % 10) + ord("A")) + hexadecimal
   else:
-    hex = str(remainder) + hex
+    hexadecimal = str(remainder) + hexadecimal
 
   number = number // 16
 
-print(f"Hexadecimal: {hex}") 
+print(f"Hexadecimal: {hexadecimal}") 
