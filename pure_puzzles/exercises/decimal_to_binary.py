@@ -6,7 +6,7 @@ binary = ''
 char_str = sys.stdin.read(1)
 number =  0
 
-while char_str not in ("\n", "\r"):
+while char_str not in ("\n", "\r", ""):
   if char_str.isdigit():
     number = number * 10 + int(char_str)
   char_str = sys.stdin.read(1)
