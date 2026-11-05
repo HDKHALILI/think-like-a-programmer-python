@@ -2,9 +2,10 @@ import sys
 
 print("Enter a decimal number to convert to hexadecimal: ", end="", flush=True)
 
+HEX_DIGITS = "0123456789ABCDEF"
 hexadecimal = ''
 char_str = sys.stdin.read(1)
-number =  0
+number = 0
 hex_base = 16
 
 while char_str not in ("\n", "\r", ""):
@@ -14,12 +15,7 @@ while char_str not in ("\n", "\r", ""):
 
 while number > 0:
   remainder = number % hex_base
-
-  if remainder >= 10:
-    hexadecimal = chr((remainder - 10) + ord("A")) + hexadecimal
-  else:
-    hexadecimal = str(remainder) + hexadecimal
-
+  hexadecimal = HEX_DIGITS[remainder] + hexadecimal
   number = number // hex_base
 
 print(f"Hexadecimal: {hexadecimal}") 
