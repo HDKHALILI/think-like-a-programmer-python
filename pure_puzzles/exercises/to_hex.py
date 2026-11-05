@@ -1,6 +1,11 @@
 import sys
 
-print("Enter a decimal number to convert to hexadecimal: ", end="", flush=True)
+# incase the input is piped in we don't display the prompt
+if sys.stdin.isatty():
+  print(
+    "Enter a decimal number to convert to hexadecimal: ",
+    end="", flush=True
+  )
 
 HEX_DIGITS = "0123456789ABCDEF"
 hexadecimal = ''
