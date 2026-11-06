@@ -106,3 +106,7 @@ At the beginning of each message, the decoding mode is uppercase letters. Each t
 ##### 5\. Decimal to hexadecimal converter
 
 [`exercises/to_hex.py`](exercises/to_hex.py)
+
+##### 4c\. Binary to decimal converter.
+
+[`exercises/binary_to_dec.py`](exercises/binary_to_dec.py)
