@@ -3,7 +3,7 @@ import sys
 # incase the input is piped in we don't display the prompt
 if sys.stdin.isatty():
   print(
-    "Enter a decimal number to convert to hexadecimal: ",
+    "Enter a binary number to convert to decimal: ",
     end="", flush=True
   )
 
