@@ -11,7 +11,7 @@ char_str = sys.stdin.read(1)
 number = 0
 
 while char_str not in ("\n", "\r", ""):
-  if char_str.isdigit():
+  if char_str.isdigit() and char_str in ("1", "0"):
     number = number * 10 + int(char_str)
   char_str = sys.stdin.read(1)
 
